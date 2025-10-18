@@ -6,6 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Exercícios HTML</title>
   <link rel="shortcut icon" type="image/png" href="https://dabblew.github.io/src/icon_dabblew.png" id="favicon">
+
+  <style>
+
+    *{
+      display: relative;
+      margin: 8px;
+      width: auto;
+      background: rgb(0, 21, 31);
+      color: white;
+    }
+    header{
+      padding: 8px;
+      background-color: bisque;
+      border-radius: 8px;
+      display: flex;
+      justify-items: ;   
+    }
+
+  </style>
 </head>
 
 <body>
@@ -41,6 +60,7 @@
         </figure>
       </div>
     </section>
+    <hr>>
     <section id="HierarqTitle" style="width: 100vh;">
       <h1>Hierarquia de Títulos</h1>
       <h2>Entendendo Portugal</h2>
@@ -105,6 +125,201 @@
       <div>
         <h2>Citações completas</h2>
         <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+        <blockquote
+          cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&pg=PA17&dq=HTML&hl=pt-BR&sa=X&ved=0ahUKEwjH5-PevNboAhVNIbkGHcoxCOgQ6AEIOjAC#v=onepage&q=HTML&f=false">
+          A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo
+          descrevem os blocos de texto.
+        </blockquote>
+      </div>
+      <div>
+        <h2>Abreviações</h2>
+        <p>Estou estudando
+          <abrev title="HiperText Markup Language">HTML</abrev>
+          e
+          <abrev title="Cascading Style Sheets">CSS</abrev>
+          .Estou adorando!
+        </p>
+      </div>
+      <div>
+        <h2>Texto invertido</h2>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+      </div>
+    </section>
+    <section id="Lists">
+      <h1>Trabalhando com Listas</h1>
+      <div>
+        <h2>Lista Ordenada</h2>
+        <ol type="i">
+          <li>Acordar type</li>
+          <li>Ligar para o João</li>
+          <li>Tomar café</li>
+          <li>Escovar os dentes</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Lista não-ordenada</h2>
+        <ul>
+          <li>Pão</li>
+          <li>Café</li>
+          <li>Leite</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Minhas Linguagens Favoritas</h2>
+        <ol>
+          <li>Antigas
+            <ol type="a">
+              <li>Clipper</li>
+              <li>Visual Basic</li>
+              <li>Delphi</li>
+            </ol>
+          </li>
+          <li>Novas
+            <ol type="a">
+              <li>PHP</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Meus Jogos Favoritos</h2>
+        <ol>
+          <li>NES
+            <ul type="square">
+              <li>Mario Bros
+                <ul type="circle">
+                  <li>Mario Bros 3</li>
+                  <li>Mario: Lost Levels</li>
+                </ul>
+              </li>
+              <li>Ninja Gaiden</li>
+            </ul>
+          </li>
+          <li>SNES
+            <ul type="square">
+              <li>Mario</li>
+              <li>Donkey Kong</li>
+            </ul>
+          </li>
+          <li>PlayStation
+            <ul type="square">
+              <li>Final Fantasy</li>
+              <li>Castlevania</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Lista de Definições</h2>
+        <dl>
+          <dt>HTML</dt>
+          <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+          <dt>CSS</dt>
+          <dd>Linguagem de marcação para a criação do design de um site.</dd>
+          <dt>JavaScript</dt>
+          <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+        </dl>
+      </div>
+    </section>
+    <section id="Links">
+      <div>
+        <h1>Usando links externos</h1>
+        <p>Você pode acessar o meu
+          <a href="https://gustavoguanabara.github.io/">
+            repositório publico no GitHub
+          </a>
+        </p>
+        <p>Você também pode acessar a nossa
+          <a href="https://youtube.com/cursoemvideo/">
+            canal gratuito no YouTube
+          </a>
+        </p>
+      </div>
+      <div>
+        <h1>Usando links internos</h1>
+        <p>Esta é a primeira página do site. Se você quiser, pode ver
+          <a href="#TestImagens">algumas imagens</a>
+        </p>
+        <p>Você também pode ver as
+          <a href="#Lists">minhas listas</a>
+        </p>
+      </div>
+      <div>
+        <h1>Links para Download</h1>
+        <ul>
+          <li><a href="https://fernandojose.dev.br/htmlecss/modulo-01/ex010/livro/meulivro.pdf">Baixar o livro em
+              PDF</a></li>
+          <li><a href="https://fernandojose.dev.br/htmlecss/modulo-01/ex010/livro/meulivro.zip">Livro compactado em
+              ZIP</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="DinamicImage">
+      <div>
+        <h1>Imagem dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+          navegador.</p>
+        <picture>
+          <source media="(max-width: 750px)"
+                  srcset="https://fernandojose.dev.br/htmlecss/modulo-01/ex011/imagens/foto-p.png" type="image/png">
+          <source media="(max-width: 1050px)"
+                  srcset="https://fernandojose.dev.br/htmlecss/modulo-01/ex011/imagens/foto-m.png" type="image/png">
+          <img src="https://fernandojose.dev.br/htmlecss/modulo-01/ex011/imagens/foto-g.png" alt="img flexível">
+        </picture>
+      </div>
+      <div>
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio preload="metadata"
+               autoplay
+               controls
+               loop>
+          <source src="https://fernandojose.dev.br/htmlecss/modulo-01/ex011/midia/guanacast-33.mp3" type="audio/mpeg">
+          <source src="https://fernandojose.dev.br/htmlecss/modulo-01/ex011/midia/guanacast-33.ogg" type="audio/mpeg">
+          <source src="https://fernandojose.dev.br/htmlecss/modulo-01/ex011/midia/guanacast-33.wav" type="audio/mpeg">
+          <p>
+            Infelizmente seu navegador não consegue reproduzir áudio.
+            <a href="https://fernandojose.dev.br/htmlecss/modulo-01/ex011/midia/guanacast-33.mp3">
+              Clique aqui para baixar o arquivo MP3.
+            </a>
+          </p>
+        </audio>
+      </div>
+    </section>
+    <section id="Videos">
+      <div>
+        <h1>Inserindo vídeos hospedados localmente</h1>
+        <p>Este vídeo está hospedado no meu próprio servidor</p>
+        <video width="560" poster="" controls autoplay loop>
+          <source src="https://fernandojose.dev.br/htmlecss/modulo-01/ex012/midia/meu-video.mp4" type="video/mp4">
+          <source src="https://fernandojose.dev.br/htmlecss/modulo-01/ex012/midia/meu-video.m4v" type="video/mp4">
+          <source src="https://fernandojose.dev.br/htmlecss/modulo-01/ex012/midia/meu-video.webm" type="video/mp4">
+          <source src="https://fernandojose.dev.br/htmlecss/modulo-01/ex012/midia/meu-video.ogv" type="video/mp4">
+          <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+      </div>
+      <div>
+        <h1>Inserindo vídeos do Youtube</h1>
+        <iframe width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ZjVAsJOl8SM?si=hfT8tmhhA9xK-kJZ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+        </iframe>
+        <iframe width="560"
+                height="315"
+                src="https://www.youtube.com/embed/x7uLutVRBfI?si=Omr-zRWsvZyk1bQH"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+        </iframe>
       </div>
     </section>
   </main>
